@@ -1,0 +1,88 @@
+body,
+html {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  box-sizing: border-box;
+  background-color: white;
+}
+
+* {
+  font-family: 'Poppins', sans-serif;
+}
+
+h1 {
+  font-weight: 700;
+  font-size: 2rem;
+  color: green;
+  text-align: center;
+}
+
+button {
+  cursor: pointer;
+  margin: 0.5rem;
+  padding: 0.5rem 1rem;
+  border: none;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  background-color: green;
+  color: white;
+}
+
+button:hover {
+  filter: brightness(1.3);
+}
+
+button:disabled {
+  background-color: lightgray;
+  color: grey;
+}
+
+.numbers {
+  width: 50%;
+  padding: 10px;
+  list-style-type: none;
+  font-family: monospace;
+  font-size: 20px;
+  text-align: center;
+}
+
+.number {
+  display: inline-table;
+  margin: 10px;
+  background-color: lightyellow;
+  font-weight: 600;
+  width: 25px;
+  border-radius: 100%;
+  padding: 10px 12px;
+  user-select: none;
+  cursor: pointer;
+}
+
+.selected-number {
+  background-color: green;
+  color: white;
+}
+
+#megasena-buttons {
+  margin-bottom: 2rem;
+}
+
+.center {
+  display: flex;
+  justify-content: center;
+}
+
+.saved-games {
+  padding: 1rem;
+}
+
+@media only screen and (max-width: 912px) {
+  .resize {
+    display: grid;
+  }
+
+  .numbers {
+    width: 80%;
+  }
+}
